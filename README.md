@@ -1,6 +1,6 @@
 # DESCRIPTION:
 
-This cookbook installs pirum - The simple PEAR Channel Server Manager.
+This cookbook installs Pirum - The simple PEAR Channel Server Manager.
 
 Installation is done via PEAR itself.
 
