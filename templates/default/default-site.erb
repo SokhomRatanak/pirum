@@ -1,12 +1,12 @@
 server {
-  listen   <%= node[:pear_channel][:port] %>;
-  server_name  <%= node[:pear_channel][:hostname] %>;
+  listen   <%= node[:pirum][:port] %>;
+  server_name  <%= node[:pirum][:hostname] %>;
 
-  access_log  <%= node[:nginx][:log_dir] %>/<%= node[:pear_channel][:hostname] %>.access.log;
-  error_log  <%= node[:nginx][:log_dir] %>/<%= node[:pear_channel][:hostname] %>.error.log;
+  access_log  <%= node[:nginx][:log_dir] %>/<%= node[:pirum][:hostname] %>.access.log;
+  error_log  <%= node[:nginx][:log_dir] %>/<%= node[:pirum][:hostname] %>.error.log;
 
   location / {
-    root   <%= node[:pear_channel][:webroot] %><%= node[:pear_channel][:hostname] %>;
+    root   <%= node[:pirum][:webroot] %><%= node[:pirum][:hostname] %>;
     index  index.html index.htm;
   }
 }
