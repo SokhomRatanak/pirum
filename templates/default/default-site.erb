@@ -1,0 +1,12 @@
+server {
+  listen   <%= node[:pear_channel][:port] %>;
+  server_name  <%= node[:pear_channel][:hostname] %>;
+
+  access_log  <%= node[:nginx][:log_dir] %>/<%= node[:pear_channel][:hostname] %>.access.log;
+  error_log  <%= node[:nginx][:log_dir] %>/<%= node[:pear_channel][:hostname] %>.error.log;
+
+  location / {
+    root   <%= node[:pear_channel][:webroot] %><%= node[:pear_channel][:hostname] %>;
+    index  index.html index.htm;
+  }
+}
