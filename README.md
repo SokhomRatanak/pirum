@@ -8,10 +8,10 @@ See http://www.pirum-project.org/ and https://github.com/fabpot/Pirum for develo
 
 # REQUIREMENTS:
 
-* php
-* a webserver cookbook
+* php cookbook (1.0.0)
+* nginx cookbook (0.99.0)
 
-This recipe is currently only tested with Ubuntu & Debian.
+This recipe is currently only tested with Ubuntu & Debian with Nginx.
 
 # ATTRIBUTES:
 
