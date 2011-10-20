@@ -1,10 +1,6 @@
-package "pear" do
-  action :upgrade
-end
-
 case node.platform
 when "debian", "ubuntu"
-  include_recipe "php::pear"
+  include_recipe "php"
 
   # @see http://www.pirum-project.org/
   execute "pear channel-discover pear.pirum-project.org" do
