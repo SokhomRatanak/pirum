@@ -5,6 +5,8 @@ description      "Installs/Configures Pirum - A simple PEAR Channel Server Manag
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.0.4"
 
+recipe "pirum", "Installs and configures Pirum through PEAR"
+
 %w[php].each do |cb|
   depends cb
 end
